@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+/* reset */
+* {margin: 0 auto; padding: 0; color: #333333;}
+a {text-decoration: none;}
+li {list-style: none;}
+#wrap {width: 1200px;}
+.clearfix::after, .clearfix::before {display: block; content: ''; clear: both;}
+
+/* header */
+#header {width: 1200px;}
+.logo {float: left; width: 240px; height: 100px;}
+.logo img {margin: 30px 20px 30px 20px;}
+
+.nav {float: right; width: 600px; height: 40px;}
+
+/* slide */
+#slide {width: 1200px; height: 300px;}
+
+/* contents */
+#contents {width: 1200px;}
+.notice {float: left; width: 400px; height: 200px;}
+.banner {float: left; width: 400px; height: 200px;}
+.shortcut {float: left; width: 400px; height: 200px;}
+
+/* footer */
+#footer {width: 1200px;}
+.btlogo {float: left; width: 200px; height: 100px;}
+.btwrap {float: left; width: 1000px; height: 100px;}
+.btmenu {width: 1200px; height: 50px;}
+.copyright {width: 1200px; height: 50px;}
+
