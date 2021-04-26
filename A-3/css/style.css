@@ -12,10 +12,21 @@ li {list-style: none;}
 .logo {float: left; width: 240px; height: 100px;}
 .logo img {margin: 30px 20px 30px 20px;}
 
-.nav {float: right; width: 600px; height: 40px;}
+.menu {position: relative; float: right; width: 600px; height: 40px; margin-top: 30px; margin-right: 20px;}
+.menu li {float: left; width: 150px; height: 40px; background: #ffffff;}
+.menu li a {display: block; text-align: center; line-height: 40px; font-weight: bold;}
+.menu li a:hover {background: #30a3f3;}
+.submenu {display: none;}
+
 
 /* slide */
 #slide {width: 1200px; height: 300px;}
+.imglist {position: relative;}
+.imglist li {position: absolute;}
+.imglist h2 {position: absolute; z-index: 2; width: 400px; height: 100px; left: 50%; top: 50%; transform: translate(-50%, -50%); background: rgba(1,1,1,0.5); color: #dddddd; text-align: center; line-height: 100px;}
+.imglist li:nth-child(2) {display: none;}
+.imglist li:nth-child(3) {display: none;}
+
 
 /* contents */
 #contents {width: 1200px;}
