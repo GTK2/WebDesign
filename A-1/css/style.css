@@ -1,0 +1,38 @@
+@charset "utf-8";
+
+/* reset */
+* {margin: 0 auto; padding: 0; color: #222328; background: #fff;}
+a {text-decoration: none;}
+li {list-style: none;}
+.clearfix::after, .clearfix::before {display: block; content:''; clear: both;}
+
+/* header */
+#header {width: 1200px; background: #ff98fa;}
+.logo {float: left; width: 200px; height: 100px; background: #ff98fa;}
+.logo img {width: 200px; height: 40px; margin-top: 30px; background: #ff98fa;}
+.logo a {background: #ff98fa;}
+.menu {position: relative; z-index: 2; float: right; width: 600px; height: 40px; margin-top: 30px; margin-right: 10px;  background: #ff98fa;}
+.menu li {float: left; width: 150px; height: 40px; }
+.menu li a {display: block; width: 150px; height: 40px; line-height: 40px; text-align: center; background: #e6e;}
+.menu li a:hover {background: rgba(160,40,160,0.7);}
+.submenu {display: none;}
+.submenu li a {background: #ebe;}
+
+
+/* slide */
+#slide {width: 1200px; height: 300px;}
+.slidelist {position: relative; width: 1200px; height: 300px; overflow: hidden;}
+.slidelist li {position: absolute; top: 0; left: 0;}
+.slidelist h2 {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 350px; height: 80px; text-align: center; line-height: 80px; color: #fff; background: rgba(0,0,0,0.5);}
+
+/* contents */
+#contents {width: 1200px;}
+.notice {float: left; width: 400px; height: 200px; background: #444;}
+.banner {float: left; width: 400px; height: 200px; background: #555;}
+.shortcut {float: left; width: 400px; height: 200px; background: #444;}
+
+/* footer */
+#footer {width: 1200px;}
+.btlogo {float: left; width: 200px; height: 100px; background: #666;}
+.copyright {float: left; width: 800px; height: 100px; background: #777;}
+.sns {float: left; width: 200px; height: 100px; background: #666;}
