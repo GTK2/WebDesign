@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 /* reset */
-* {margin: 0 auto; padding: 0; color: #222328; background: #fff;}
+* {margin: 0 auto; padding: 0; color: #222328;}
 a {text-decoration: none;}
 li {list-style: none;}
 .clearfix::after, .clearfix::before {display: block; content:''; clear: both;}
@@ -23,16 +23,30 @@ li {list-style: none;}
 #slide {width: 1200px; height: 300px;}
 .slidelist {position: relative; width: 1200px; height: 300px; overflow: hidden;}
 .slidelist li {position: absolute; top: 0; left: 0;}
+.slidelist li:nth-child(2) {top: 300px;}
+.slidelist li:nth-child(3) {top: 300px;}
+.slidelist a {display: block;}
 .slidelist h2 {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 350px; height: 80px; text-align: center; line-height: 80px; color: #fff; background: rgba(0,0,0,0.5);}
 
 /* contents */
 #contents {width: 1200px;}
-.notice {float: left; width: 400px; height: 200px; background: #444;}
-.banner {float: left; width: 400px; height: 200px; background: #555;}
-.shortcut {float: left; width: 400px; height: 200px; background: #444;}
+.con1 {float: left; width: 380px; height: 180px; padding: 10px;}
+.tab-btn {width: 380px; height: 40px;}
+.tab-btn li {float: left; width: 100px; height: 40px; text-align: center; line-height: 40px; border: 1px solid #ddd; background: #eee;}
+.tab-btn li:first-child {border-right: 0;}
+.tab-btn li.on {background: #fff;}
+.tab-cont {position: relative; width: 380px; height: 140px; border: 1px solid #ddd;}
+.notice li {width: 380px; height: 30px;}
+.notice span {position: absolute; right: 0; width: 380px; height: 30px;}
+
+
+
+
+.con2 {float: left; width: 400px; height: 200px;}
+.con3 {float: left; width: 400px; height: 200px;}
 
 /* footer */
 #footer {width: 1200px;}
-.btlogo {float: left; width: 200px; height: 100px; background: #666;}
-.copyright {float: left; width: 800px; height: 100px; background: #777;}
-.sns {float: left; width: 200px; height: 100px; background: #666;}
+.btlogo {float: left; width: 200px; height: 100px;}
+.copyright {float: left; width: 800px; height: 100px;}
+.sns {float: left; width: 200px; height: 100px;}
