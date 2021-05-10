@@ -18,4 +18,16 @@ $(document).ready(function(){
         $imgList.eq(prev).stop().animate({top : -300 + 'px'}, 1500);
     }, 3000);
 
+    var tabBtn = $(".tab-btn > ul > li");
+    var tabCont = $(".tab-cont > ul");
+    tabCont.hide().eq(0).show();
+    tabBtn.click(function(){
+        var target = $(this);
+        var index = target.index();
+        tabBtn.removeClass("on");
+        target.addClass("on");
+        tabCont.hide();
+        tabCont.eq(index).show();
+    });
+
 });
