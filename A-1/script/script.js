@@ -30,4 +30,11 @@ $(document).ready(function(){
         tabCont.eq(index).show();
     });
 
+    $(".notice > li").eq(0).click(function(){
+        $("#modal").show();
+    });
+    $(".popup > input").click(function(){
+        $("#modal").hide();
+    });
+
 });
