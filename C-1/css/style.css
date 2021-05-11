@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+/* reset */
+* {margin: 0; padding: 0; color: #222328;}
+a {text-decoration: none;}
+li {list-style: none;}
+#wrap {width: 100px; height: 650px;}
+.clearfix::after, .clearfix::before {display: block; content:''; clear: both;}
+
+/* header */
+#header {width: 200px; height: 650px;}
+.logo {height: 100px;}
+.logo img {width: 200px; height: 40px; margin-top: 20px;}
+
+.menu {width: 200px; height: 550px;}
+.menu li {width: 150px; height: 40px; margin-left: 25px; text-align: center; line-height: 40px; background: #eee;}
+.menu a {display: block;}
+.submenu li {display: none; background: #ccc;}
