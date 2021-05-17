@@ -1,0 +1,65 @@
+@charset "utf-8";
+
+/* reset */
+* {margin: 0; padding: 0; color: #222328;}
+a {text-decoration: none;}
+li {list-style: none;}
+.clearfix::after, .clearfix::before {display: block; content: ''; clear: both;}
+#wrap {width: 1000px; height: 550px;}
+
+/* modal */
+#modal {display: none; position: absolute; z-index: 999; width: 100%; height: 100%; background: rgba(0,0,0,0.7);}
+.popup {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 400px; height: 300px; background: #fff;}
+.popup h3 {padding: 10px; background: #d9d;}
+.popup div {padding: 10px;}
+.popup input {cursor: pointer; position: absolute; right: 10px; bottom: 10px;}
+
+/* header */
+#header {float: left;}
+.logo {width: 200px; height: 100px;}
+.logo img {width: 200px; height: 40px; margin-top: 30px;}
+.menu {width: 150px; height: 450px; padding-left: 25px;}
+.menu ul li {display: block; width: 150px;  text-align: center; line-height: 40px; background: #eee;}
+.menu a {display: block;}
+.menu a:hover {background: #eebbcc;}
+.submenu {display: none;}
+.submenu a {background: #ccc;}
+
+/* body-wrap */
+#body-wrap {float: left;}
+
+/* slide */
+.imglist {position: relative; width: 800px; height: 350px;}
+.imglist li {position: absolute; width: 760px; height: 310px; padding: 20px;}
+.imglist img {width: 760px; height: 310px;}
+.imglist span {position: absolute; display: block; width: 300px; height: 60px; background: rgba(0,0,0,0.7); color: #fff; text-align: center; line-height: 60px; font-size: 20px; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+
+
+/* contents */
+.con1 {float: left; width: 300px; height: 200px;}
+.con1 h2 {height: 40px; line-height: 40px;}
+.notice {border: 1px solid #ddd; width: 300px; height: 160px;}
+.notice li div {float: left; width: 180px; height: 40px; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 40px; padding: 0 10px 0 10px;}
+.notice a:hover {text-decoration: underline;}
+.notice span {float: right; width: 90px; height: 40px; display: block; line-height: 40px; padding-right: 10px; text-align: right;}
+
+.con2 {float: left; width: 250px; height: 200px;}
+.con2 h2 {height: 40px; line-height: 40px;}
+.gallery {width:230px; height: 160px; padding: 0 10px 0 10px;}
+.gallery li {float: left; width: 75px; height: 75px; padding-right: 1px; margin-top: 42px;}
+.gallery img:hover {opacity: 0.5;}
+
+.con3 {float: left; width: 250px; height: 200px;}
+.con3 h2 {height: 40px; line-height: 40px;}
+.con3 img {width: 200px; height: 100px; padding: 25px;}
+.con3 img:hover {opacity: 0.5;}
+
+/* footer */
+.copyright {float: left; width: 600px; height: 100px;}
+.copyright h3 {text-align: center; height: 40px; margin-top: 60px;}
+.bt-wrap {float: left; width: 200px; height: 100px;}
+.sns {width: 200px; height: 50px;}
+.sns ul li {float: left; width: 40px; height: 40px; padding-top: 5px; padding-right: 20px;}
+.site {width: 200px; height: 30px; padding-top: 20px;}
+
+
