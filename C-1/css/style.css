@@ -16,13 +16,14 @@ li {list-style: none;}
 .menu li {width: 150px; text-align: center; line-height: 40px; background: #eee;}
 .menu a {display: block;}
 .menu a:hover {background: #fd0;}
-.submenu li {display: none; background: #ddd; line-height: 30px; font-size: 14px;}
+.submenu {display: none;}
+.submenu li {background: #ddd; height: 30px; line-height: 30px; font-size: 14px;}
 .submenu a:hover {background: #fe3;}
-
-
 
 /* slide */
 #body-wrap {float: left; width: 800px; height: 650px;}
 .img-list {width: 800px; height: 350px; position: relative;}
 .img-list li {position: absolute; left: 0; top: 0;}
+/* .img-list li:nth-child(2) {display: none;}
+.img-list li:nth-child(3) {display: none;} */
 .img-list h2 {position: absolute; width: 400px; height: 100px; top: 50%; left: 50%; transform: translate(-50%, -50%); background: rgba(0,0,0,0.7); color: #fff; text-align: center; line-height: 100px;}
