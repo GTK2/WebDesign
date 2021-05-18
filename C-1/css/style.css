@@ -4,15 +4,25 @@
 * {margin: 0; padding: 0; color: #222328;}
 a {text-decoration: none;}
 li {list-style: none;}
-#wrap {width: 100px; height: 650px;}
 .clearfix::after, .clearfix::before {display: block; content:''; clear: both;}
+#wrap {width: 1000px; height: 650px;}
 
 /* header */
-#header {width: 200px; height: 650px;}
+#header {float: left; width: 200px; height: 650px;}
 .logo {height: 100px;}
 .logo img {width: 200px; height: 40px; margin-top: 20px;}
 
-.menu {width: 200px; height: 550px;}
-.menu li {width: 150px; height: 40px; margin-left: 25px; text-align: center; line-height: 40px; background: #eee;}
+.menu {width: 175px; height: 550px; padding-left: 25px;}
+.menu li {width: 150px; text-align: center; line-height: 40px; background: #eee;}
 .menu a {display: block;}
-.submenu li {display: none; background: #ccc;}
+.menu a:hover {background: #fd0;}
+.submenu li {display: none; background: #ddd; line-height: 30px; font-size: 14px;}
+.submenu a:hover {background: #fe3;}
+
+
+
+/* slide */
+#body-wrap {float: left; width: 800px; height: 650px;}
+.img-list {width: 800px; height: 350px; position: relative;}
+.img-list li {position: absolute; left: 0; top: 0;}
+.img-list h2 {position: absolute; width: 400px; height: 100px; top: 50%; left: 50%; transform: translate(-50%, -50%); background: rgba(0,0,0,0.7); color: #fff; text-align: center; line-height: 100px;}
