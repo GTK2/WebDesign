@@ -7,6 +7,13 @@
 </head>
 <body>
     <div id="wrap">
+        <div id="modal">
+            <div class="popup">
+                <h3>제목 : 대한투어 공지사항</h3>
+                <div>내용: 동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라만세. 무궁화 삼천리 화려강 대한 사람 대한으로 길이 보전하세. 남산 위에 저 소나무, 철갑을 두른 듯 바람서리 불변함은 우리 기상일세.</div>
+                <input type="button" value="닫기">
+            </div>
+        </div>
         <header id="header" class="clearfix">
             <div class="logo">
                 <a href="#"><img src="images/logo.png" alt="logo"></a>
@@ -54,15 +61,45 @@
             </ul>
         </section>
         <section id="contents" class="clearfix">
-            <div class="con1">공지</div>
-            <div class="con2">갤러리</div>
-            <div class="con3">바로가기</div>
+            <div class="con1">
+                <div class="btn">공지사항</div>
+                <ul class="notice">
+                    <li><a href="#"><div>대한투어 공지사항1</div><span>2020.01.01</span></a></li>
+                    <li><a href="#"><div>대한투어 공지사항2</div><span>2020.01.01</span></a></li>
+                    <li><a href="#"><div>대한투어 공지사항3</div><span>2020.01.01</span></a></li>
+                    <li><a href="#"><div>대한투어 공지사항4</div><span>2020.01.01</span></a></li>
+                </ul>
+            </div>
+            <div class="con2">
+                <div class="btn">갤러리</div>
+                <ul class="gallery clearfix">
+                    <li><a href="#"><img src="images/icon1.jpg" alt="icon1"></a></li>
+                    <li><a href="#"><img src="images/icon2.jpg" alt="icon2"></a></li>
+                    <li><a href="#"><img src="images/icon3.jpg" alt="icon3"></a></li>
+                </ul>
+            </div>
+            <div class="con3">
+                <a href="#"><img src="images/direct.jpg" alt="shortcut"><h3>바로가기</h3></a>
+            </div>
         </section>
         <footer id="footer" class="clearfix">
-            <div class="copyright">copy</div>
+            <div class="copyright">COPYRIGHTⓒ by WEBDESIGN. ALL RIGHTS RESERVED</div>
             <div class="bt-wrap">
-                <div class="sns">sns</div>
-                <div class="site">사이트</div>
+                <div class="sns">
+                    <ul class="clearfix">
+                        <li><a href="#"><img src="images/sns1.jpg" alt="sns1"></a></li>
+                        <li><a href="#"><img src="images/sns2.jpg" alt="sns2"></a></li>
+                        <li><a href="#"><img src="images/sns3.jpg" alt="sns3"></a></li>
+                    </ul>
+                </div>
+                <div class="site">
+                    <select name="site">
+                        <option>패밀리사이트</option>
+                        <option value="site1">패밀리사이트1</option>
+                        <option value="site2">패밀리사이트2</option>
+                        <option value="site3">패밀리사이트3</option>
+                    </select>
+                </div>
             </div>
         </footer>
     </div>
