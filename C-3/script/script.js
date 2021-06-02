@@ -21,4 +21,11 @@ $(document).ready(function(){
         imgList.eq(index).animate({left: 0}, 1000);
         imgList.eq(prev).animate({left: -800 + 'px'}, 1000);
     }, 3000);
+
+    $(".notice li:first-child").click(function(){
+        $("#modal").show();
+    });
+    $(".popup input").click(function(){
+        $("#modal").hide();
+    });
 });
