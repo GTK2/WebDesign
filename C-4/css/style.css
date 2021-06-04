@@ -1,0 +1,65 @@
+@charset "utf=8";
+
+/* reset */
+* {margin: 0; padding: 0; background-color: #fff; color: #222328;}
+a {display: block; text-decoration: none;}
+li {list-style: none;}
+#wrap {width: 1000px; height: 650px;}
+.clearfix::after, .clearfix::before {display: block; content: ''; clear: both;}
+
+/* header */
+#header {float: left; width: 200px;}
+.logo {width: 200px; height: 100px;}
+.logo img {width: 200px; height: 40px; margin-top: 30px;}
+.menu {position: relative; z-index: 3; width: 175px; padding-left: 25px;}
+.menu li {width: 150px; height: 40px; text-align: center; line-height: 40px;}
+.menu a {background-color: #faa;}
+.menu a:hover {background-color: #fdd;}
+.submenu {display: none; position: absolute; left: 175px;top: -30px; z-index: 3;}
+.submenu li {height: 30px; line-height: 30px; font-size: 14px;}
+.subbox {display: none; position: absolute; z-index: 2; width: 150px; height: 250px;background-color: rgba(0,0,0,0.7); top: -30px; left: 175px;}
+
+/* slide */
+#body-wrap {float: left; width: 800px; height: 650px;}
+.imglist {position: relative; width: 800px; height: 350px; overflow: hidden;}
+.imglist li {position: absolute; top: 0; left: 0; width: 800px; height: 350px;}
+.imglist h2 {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 400px; height: 60px; text-align: center; line-height: 60px; background-color: rgba(0,0,0,0.7); color: #fff;}
+.imglist li:nth-child(2) {left: 800px;}
+.imglist li:nth-child(3) {left: 800px;}
+
+/* contents */
+#contents {width: 800px; height: 200px;}
+.con1 {float: left; width: 280px; height: 180px; padding: 10px;}
+.btn {width: 100px; height: 40px; text-align: center; line-height: 40px; font-weight: bold;}
+.btn a {background-color: #ddd;}
+.notice {width: 280px; height: 140px;}
+.notice li {width: 280px; height: 35px; background-color: #eee; line-height: 35px;}
+.notice div {float: left; width: 170px; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; background-color: #eee; padding-left: 10px;}
+.notice span {float: right; width: 90px; background-color: #eee; padding-right: 10px; text-align: right;}
+.notice div:hover {text-decoration: underline;}
+
+.con2 {float: left; width: 230px; height: 180px; padding: 10px;}
+.gallery {width: 210px; height: 120px; padding: 10px;}
+.gallery li {float: left; width: 70px; height: 120px; text-align: center;}
+.gallery img {width: 60px; margin-top: 30px;}
+.gallery img:hover {opacity: 0.5;}
+
+.con3 {position: relative; float: left; width: 230px; height: 180px; padding: 10px;}
+.con3 img {width: 230px; height: 120px; margin-top: 30px;}
+.con3 img:hover {opacity: 0.5;}
+.con3 h2 {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 120px; height: 50px; text-align: center; line-height: 50px; background-color: rgba(0,0,0,0.7); color: #fff;}
+
+/* footer */
+#footer {width: 800px; height: 100px;}
+.bt-logo {float: left; width: 200px; height: 100px; margin-top: 30px;}
+.bt-logo img {filter: grayscale(1);}
+.copyright {float: left; width: 450px; height: 100px; font-size: 16px; font-weight: bold; text-align: center; line-height: 100px;}
+.site {float: left; width: 150px; height: 100px;}
+.site select {margin-top: 40px;}
+
+/* modal */
+#modal {display: none; position: absolute; width: 100%; height: 100%; z-index: 999; background-color: rgba(0,0,0,0.7);}
+.popup {position: absolute; width: 400px; height: 200px; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+.popup h3 {padding: 10px; background-color: #aaa;}
+.popup div {padding: 10px;}
+.popup input {position: absolute; bottom: 10px; right: 10px; cursor: pointer;}
