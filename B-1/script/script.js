@@ -27,4 +27,11 @@ $(document).ready(function(){
         $(".notice").hide();
         $(".gallery").show();
     });
+
+    $(".notice li:first-child").click(function(){
+        $("#modal").show();
+    });
+    $(".popup input").click(function(){
+        $("#modal").hide();
+    });
 });
