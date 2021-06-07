@@ -1,0 +1,65 @@
+@charset "utf-8";
+
+/* reset */
+* {margin: 0 auto; padding: 0; background-color: #fff; color: #222328;}
+a {text-decoration: none; display: block;}
+li {list-style: none;}
+#wrap {width: 100%; height: 700px;}
+.clearfix::after, .clearfix::before {display: block; content: ''; clear: both;}
+
+/* header */
+#header {position: relative; width: 100%; height: 100px;}
+.logo {float: left; width: 200px; height: 100px;}
+.logo img {width: 200px; height: 40px; margin-top: 30px;}
+
+.menu {position: absolute; z-index: 3;float: right; width: 600px; height: 40px; top: 60px; right: 20px; background-color: #4a4948;}
+.menu li {float: left; width: 150px; height: 40px; text-align: center; line-height: 40px;}
+.menu a:hover {background-color: #caac7d; color: #fff;}
+.submenu {z-index: 3;display: none;}
+.submenu li {height: 30px; line-height: 30px; font-size: 14px;}
+.subbox {display: none; position: absolute; width: 100%; height: 150px; background-color: rgba(0,0,0,0.7); z-index: 2; top: 100px;}
+
+/* slide */
+.imglist {position: relative; width: 1200px; height: 300px; overflow: hidden;}
+.imglist li {position: absolute; top: 0; left: 0; width: 1200px; height: 300px;}
+.imglist h2 {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 400px; height: 60px; text-align: center; line-height: 60px; background-color: rgba(0,0,0,0.7); color: #fff;}
+.imglist li:nth-child(2) {left: 1200px;}
+.imglist li:nth-child(3) {left: 1200px;}
+
+/* contents */
+#contents {width: 1200px; height: 200px;}
+.con1 {float: left; width: 380px; height: 180px; padding: 10px;}
+.btn {width: 150px; height: 40px; text-align: center; line-height: 40px; border: 1px solid #ccc; border-bottom: 0;margin: 0;}
+.notice {border: 1px solid #ccc;}
+.notice li {width: 378px; height: 35px; line-height: 35px;}
+.notice div {float: left; margin-left: 10px; width: 250px; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;}
+.notice span {float: right; margin-right: 10px; width: 100px; text-align: right;}
+.notice div:hover {text-decoration: underline;}
+
+.con2 {float: left; width: 380px; height: 180px; padding: 10px;}
+.gallery {border: 1px solid #ccc; width: 380px; height: 140px;}
+.gallery li {float: left; width: 100px; height: 100px; margin-top: 20px; margin-left: 20px;}
+.gallery img {width: 100px; height: 100px;}
+.gallery img:hover {opacity: 0.5;}
+
+.con3 {position: relative; float: left; width: 380px; height: 180px; padding: 10px;}
+.con3 img {width: 380px; height: 180px;}
+.con3 img:hover {opacity: 0.5;}
+.con3 h2 {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 150px; height: 50px; text-align: center; line-height: 50px; background-color:rgba(0,0,0,0.7); color: #fff;}
+
+/* footer */
+#footer {position: relative; width: 100%; height: 100px; background-color: #111; text-align: center;}
+.bt-wrap {width: 500px; height: 100px; background-color: #111;}
+.bt-menu {width: 300px; height: 50px; background-color: #111;}
+.bt-menu li {float: left; width: 100px; height: 50px; text-align: center; line-height: 50px;}
+.bt-menu a {background-color: #111; color: #ccc;}
+.bt-menu a:hover {text-decoration: underline;}
+.copyright {height: 50px; font-weight: bold; line-height: 50px; background-color: #111; color: #ccc;}
+.site {position: absolute; right: 10px; top: 10px; background-color: #111;}
+
+/* modal */
+#modal {display: none; position: absolute; width: 100%; height: 100%; z-index: 999; background-color: rgba(0,0,0,0.7);}
+.popup {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 400px; height: 200px;}
+.popup h3 {height: 50px; line-height: 50px; background-color: #111; color: #ccc; padding-left: 10px;}
+.popup-con {padding: 10px;}
+.close {position: absolute; right: 10px; bottom: 10px; background-color: #caac7d; padding: 5px; color: #000; cursor: pointer;}
