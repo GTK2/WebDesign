@@ -10,6 +10,8 @@ li {list-style: none;}
 #slide {width: 1200px; height: 300px;}
 .imglist {position: relative; width: 1200px; height: 300px; overflow: hidden;}
 .imglist li {position: absolute; top: 0; left: 0; width: 1200px; height: 300px;}
+.imglist li:nth-child(2) {display: none;}
+.imglist li:nth-child(3) {display: none;}
 
 .imglist img {width: 1200px; height: 300px;}
 .imglist h2 {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 400px; height: 100px; text-align: center; line-height: 100px; color: #fff; background:rgba(0,0,0,0.7);}
