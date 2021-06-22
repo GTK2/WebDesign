@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+/* reset */
+* {margin: 0 auto; padding: 0;}
+a {display: block; text-decoration: none;}
+li {list-style: none;}
+
+/* slide */
+#slide {width: 800px; height: 200px; position: relative; overflow: hidden;}
+.imglist {width: 300%; height: 100%; transition: 1s;}
+.imglist::after {content:''; display: block; clear: both;}
+.imglist li {float: left; width: 800px; height: 100%; position: relative;}
+.imglist h2 {position: absolute; width: 300px; height: 60px; top: 50%; left: 50%; text-align: center; line-height: 60px; transform: translate(-50%, -50%); background-color: rgba(0,0,0,0.7); color: #ccc;}
+.bullets {position: absolute; z-index: 2; bottom: 5px; width: 100%; text-align: center;}
+.bullets a {display: inline-block; width: 15px; height: 15px; background-color: rgba(255,255,255,0.5); border: 2px solid #333;border-radius: 50%; transition: 0.3s;}
+.bullets a:hover {background-color: rgba(255,255,255,1);}
+#s1:target ~ .bullets > a:nth-child(1) {background-color: #f99;}
+#s2:target ~ .bullets > a:nth-child(2) {background-color: #f99;}
+#s3:target ~ .bullets > a:nth-child(3) {background-color: #f99;}
+
+/* arrow */
+.prevNext div {visibility: hidden;}
+.prevNext {position: absolute; z-index: 1; top: 50%; width: 100%;}
+.prevNext a {position: absolute; left: 10px; width: 0; height: 0; border-top: 20px solid transparent; border-bottom: 20px solid transparent; border-right: 20px solid #fff; transform: translateY(-50%); opacity: 0.5; transition: 0.1s;}
+.prevNext a:hover {opacity: 1;}
+.prevNext a+a {border-right: 0; border-left: 20px solid #fff; left: auto; right: 10px;}
+#s1:target ~ .prevNext > div:nth-child(1) {visibility: visible;}
+#s2:target ~ .prevNext > div:nth-child(2) {visibility: visible;}
+#s3:target ~ .prevNext > div:nth-child(3) {visibility: visible;}
+
+/* animation */
+#s1:target~ .imglist {margin-left: 0%;}
+#s2:target~ .imglist {margin-left: -100%;}
+#s3:target~ .imglist {margin-left: -200%;}
+
+
